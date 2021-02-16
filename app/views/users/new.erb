@@ -1,0 +1,11 @@
+<h1> Sign Up! </h1>
+<p> Already have an account? <%= link_to "login", login_path %> </p>
+<%= form_for @user do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>:
+    <%= f.label :email %>:
+    <%= f.email_field :email %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.submit "Create Account" %>
+<% end %>
