@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews
   resources :escape_rooms
   resources :profiles
   resources :users, only: [:new, :create]
