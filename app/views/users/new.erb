@@ -1,9 +1,10 @@
 <h1> Sign Up! </h1>
 <p> Already have an account? </p>
 <%= form_for @user do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username %>:
-    <%= f.label :password %>
+    <%= yield :form_errors %>
+    <%= f.label "Username:" %>
+    <%= f.text_field :username %>
+    <%= f.label "Password:" %>
     <%= f.password_field :password %>
     <%= f.submit "Create Account" %>
 <% end %>

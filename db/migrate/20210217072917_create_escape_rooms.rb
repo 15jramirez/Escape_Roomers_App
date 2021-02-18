@@ -4,6 +4,8 @@ class CreateEscapeRooms < ActiveRecord::Migration[6.1]
       t.string :title
       t.datetime :hours
       t.string :difficulty
+      t.text :description
+      t.string :location
       t.timestamps
     end
   end
