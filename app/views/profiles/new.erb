@@ -1,5 +1,8 @@
 <h1> Welcome! </h1>
 <%= form_for @profile do |f| %>
+    
     <%= f.label "Profile Photo" %>
-    <%=f.file_field :image %> <br>
+    <%=f.file_field :image %> <br><br>
+    <%= f.label "About Me:" %>
+    <%= f.text_area :bio %>
 <% end %> 
