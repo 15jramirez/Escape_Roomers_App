@@ -1,5 +1,6 @@
 <h1> Sign Up! </h1>
 <p> Already have an account? </p>
+<<<<<<< HEAD
 
 <%= form_for @user do |f| %> 
     <% if @user.errors.any? %>
@@ -20,5 +21,13 @@
     <%= f.text_field :username %><br><br>
     <%= f.label "Password:" %>
     <%= f.password_field :password %><br><br>
+=======
+<%= form_for @user do |f| %>
+    <%= yield :form_errors %>
+    <%= f.label "Username:" %>
+    <%= f.text_field :username %>
+    <%= f.label "Password:" %>
+    <%= f.password_field :password %>
+>>>>>>> ffbdcac398f2153f2ffe7994d80cff66e0f23bd5
     <%= f.submit "Create Account" %>
 <% end %>
